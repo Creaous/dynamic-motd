@@ -1,3 +1,5 @@
+#### This is a fork of [seven-beep/dynamic-motd](https://github.com/seven-beep/dynamic-motd/tree/main), used in [P.R.I.S.M.](https://github.com/Creaous/PRISM)
+
 # Dynamic motd
 
 The aim of this project is to give some informations when you log into a server through SSH.

@@ -4,7 +4,7 @@ CURRENT_DIR=$(dirname "$0")
 . "$CURRENT_DIR/quiet"
 . "$CURRENT_DIR/colors"
 
-n=$(apt list --upgradable 2>/dev/null | wc -l)
+n=$(apt list --upgradable 2>/dev/null | grep -v "^Listing" | wc -l)
 if [ "$n" -gt 0 ]; then
     printf "%b  You have %s packages waiting for upgrades.%b\n\n" "$LIGHT_RED" "$n" "$NONE"
 fi
