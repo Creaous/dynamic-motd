@@ -4,4 +4,4 @@ CURRENT_DIR=$(dirname "$0")
 . "$CURRENT_DIR/quiet"
 . "$CURRENT_DIR/colors"
 
-printf "\n%b%s%b\n" "$LIGHT_RED" "$(figlet "  $(hostname -s)")" "$NONE"
+printf "\n%b%s%b\n" "$LIGHT_RED" "$(figlet -f small "  $(hostname -s)")" "$NONE"
